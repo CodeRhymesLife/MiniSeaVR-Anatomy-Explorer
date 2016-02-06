@@ -9,20 +9,22 @@
 
 <template name="index">
 	<a-scene>
-		<a-camera sync="playerOne" position="-0.1 1.8 0" cursor-color="black"></a-camera>
+		<a-camera position="-0.1 1.8 0" cursor-color="black"></a-camera>
 
 		<!-- Floor -->
-		<a-plane width="100" height="100" rotation="90 0 0" color="grey"></a-plane>
+		<a-plane width="100" height="100" rotation="90 0 0" color="black"></a-plane>
 
 		<a-sky color="#ECECEC"></a-sky>
 
 		<a-root class="menu" position="0 0 -2">
-			<a-model class='heart' rotation = "0 20 0" scale=".01 .01 .01" src="/models/heart/Heart.dae" position="0 2 -.01"></a-model>
-			<a-entity id="hello" position="0 2 0" text="text: Hello, World!" material="color: blue"></a-entity>
+			<a-model class='organ' rotation = "0 20 0" scale=".02 .02 .02" src="/models/heart/Heart.dae" position="0 2 -.01"></a-model>
+			<a-entity id="leftarrow" position="3 2 0" text="text: >" material="color: blue"></a-entity>
+			<a-entity id="rightarrow" position="-3 2 0" text="text: <" material="color: blue"></a-entity>
+
 		</a-root>
 		
 		<!-- Organ Menu -->
-		<a-root class="organMenu" rotation="0 30 0" position="-2 0 -2">
+		<a-root class="organMenu" position="0 0 -2">
 			<a-root position="0 2.5 0">
 				<a-entity class="menuItem" data-organ="brain" scale="1 0.2 0"  geometry="primitive: plane" material="color: grey"></a-entity>
 				<a-entity class="menuItem" data-organ="brain" position="-0.5 -0.15 0" scale="0.5 0.5 0.5" text="text: Brain" material="color: blue"></a-entity>
