@@ -22,30 +22,30 @@
 		</a-root>
 		
 		<!-- Organ Menu -->
-		<a-root class="organMenu" position="0 0 -2">
+		<a-root class="organMenu" rotation="0 30 0" position="-2 0 -2">
 			<a-root position="0 2.5 0">
-				<a-entity scale="1 0.2 0"  geometry="primitive: plane" material="color: grey"></a-entity>
-				<a-entity position="-0.5 -0.15 0" scale="0.5 0.5 0.5" text="text: Brain" material="color: blue"></a-entity>
+				<a-entity class="menuItem" data-organ="brain" scale="1 0.2 0"  geometry="primitive: plane" material="color: grey"></a-entity>
+				<a-entity class="menuItem" data-organ="brain" position="-0.5 -0.15 0" scale="0.5 0.5 0.5" text="text: Brain" material="color: blue"></a-entity>
 			</a-root>
 			
 			<a-root position="0 2 0">
-				<a-entity scale="1 0.2 0"  geometry="primitive: plane" material="color: grey"></a-entity>
-				<a-entity position="-0.5 -0.15 0" scale="0.5 0.5 0.5" text="text: Lungs" material="color: blue"></a-entity>
+				<a-entity class="menuItem" data-organ="lungs" scale="1 0.2 0"  geometry="primitive: plane" material="color: grey"></a-entity>
+				<a-entity class="menuItem" data-organ="lungs" position="-0.5 -0.15 0" scale="0.5 0.5 0.5" text="text: Lungs" material="color: blue"></a-entity>
 			</a-root>
 			
 			<a-root position="0 1.5 0">
-				<a-entity scale="1 0.2 0"  geometry="primitive: plane" material="color: grey"></a-entity>
-				<a-entity position="-0.5 -0.15 0" scale="0.5 0.5 0.5" text="text: Heart" material="color: blue"></a-entity>
+				<a-entity class="menuItem" data-organ="heart" scale="1 0.2 0"  geometry="primitive: plane" material="color: grey"></a-entity>
+				<a-entity class="menuItem" data-organ="heart" position="-0.5 -0.15 0" scale="0.5 0.5 0.5" text="text: Heart" material="color: blue"></a-entity>
 			</a-root>
 			
 			<a-root position="0 1 0">
-				<a-entity scale="1 0.2 0"  geometry="primitive: plane" material="color: grey"></a-entity>
-				<a-entity position="-0.5 -0.15 0" scale="0.5 0.5 0.5" text="text: Stomach" material="color: blue"></a-entity>
+				<a-entity class="menuItem" data-organ="stomach" scale="1 0.2 0"  geometry="primitive: plane" material="color: grey"></a-entity>
+				<a-entity class="menuItem" data-organ="stomach" position="-0.5 -0.15 0" scale="0.5 0.5 0.5" text="text: Stomach" material="color: blue"></a-entity>
 			</a-root>
 			
 			<a-root position="0 0.5 0">
-				<a-entity scale="1 0.2 0"  geometry="primitive: plane" material="color: grey"></a-entity>
-				<a-entity position="-0.5 -0.15 0" scale="0.5 0.5 0.5" text="text: Liver" material="color: blue"></a-entity>
+				<a-entity class="menuItem" data-organ="liver" scale="1 0.2 0"  geometry="primitive: plane" material="color: grey"></a-entity>
+				<a-entity class="menuItem" data-organ="liver" position="-0.5 -0.15 0" scale="0.5 0.5 0.5" text="text: Liver" material="color: blue"></a-entity>
 			</a-root>
 		</a-root>
 	</a-scene>
