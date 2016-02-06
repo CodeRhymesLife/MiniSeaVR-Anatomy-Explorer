@@ -9,14 +9,15 @@
 <template name="index">
 	<a-scene>
 		<a-camera sync="playerOne" position="-0.1 1.8 0" cursor-color="black"></a-camera>
-		
+
 		<!-- Floor -->
 		<a-plane width="100" height="100" rotation="90 0 0" color="grey"></a-plane>
-		
+
 		<a-sky color="#ECECEC"></a-sky>
-		
+
 		<a-root class="menu" position="0 0 -2">
-			<a-plane class="globalActions" color="red" width="1" height="0.5" position="-1.5 2.25" >
+			<a-model rotation = "0 20 0" scale=".01 .01 .01" src="/models/heart/Heart.dae" position="4 2 -.5"></a-model>
+			<!-- <a-plane class="globalActions" color="red" width="1" height="0.5" position="-1.5 2.25" >
 				<a-sphere sync="globalActions1" class="item" color="yellow" radius="0.1" position="-0.2 0 0.1"></a-sphere>
 				<a-sphere sync="globalActions2" class="item" color="yellow" radius="0.1" position="0.2 0 0.1"></a-sphere>
 			</a-plane>
@@ -30,6 +31,7 @@
 				<a-sphere sync="contextualActions7" class="item" color="yellow" radius="0.1" position="1.2 0 0.1"></a-sphere>
 			</a-plane>
 			<a-plane class="content" color="blue" width="4" height="2" position="0 1">
+
 				<a-sphere sync="content1" class="item" color="yellow" radius="0.2" position="-1.6 0.5 0.2"></a-sphere>
 				<a-sphere sync="content2" class="item" color="yellow" radius="0.2" position="-0.8 0.5 0.2"></a-sphere>
 				<a-sphere sync="content3" class="item" color="yellow" radius="0.2" position="-0 0.5 0.2"></a-sphere>
@@ -40,8 +42,8 @@
 				<a-sphere sync="content8" class="item" color="yellow" radius="0.2" position="-0 -0.5 0.2"></a-sphere>
 				<a-sphere sync="content9" class="item" color="yellow" radius="0.2" position="0.8 -0.5 0.2"></a-sphere>
 				<a-sphere sync="content10" class="item" color="yellow" radius="0.2" position="1.6 -0.5 0.2"></a-sphere>
-			</a-plane>
+			</a-plane> -->
 		</a-root>
 	</a-scene>
-	
+
 </template>
