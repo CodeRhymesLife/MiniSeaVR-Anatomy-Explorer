@@ -12,7 +12,7 @@ if(Meteor.isClient) {
 			var organ = $( this ).attr("data-organ");
 			$(".organ").get(0).setAttribute("src", '/models/organs/' + organ + '.dae');
 		});
-		
+
 		$("#rightarrow").click( function () {
 			var rotation = $(".organ").get(0).getAttribute("rotation");
 			rotation.y += 30;
