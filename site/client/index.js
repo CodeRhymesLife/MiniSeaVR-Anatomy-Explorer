@@ -1,8 +1,10 @@
 if(Meteor.isClient) {
 	Template.index.onRendered(function () {
-		$(".menu .item").click(function () {
+		$(".menu a-model").click(function () {
 			var rotation = $( this ).get(0).getAttribute("rotation");
-			$( this ).get(0).setAttribute("rotation", "");
+			var changeRot = rotation.y + 30;
+			$( this ).get(0).setAttribute("rotation", String(rotation.x) +
+				String(changeRot) + String(rotation.z));
 		});
 	});
 }
