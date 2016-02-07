@@ -8,11 +8,9 @@
 </head>
 
 <template name="index">
-	<a-scene sound="src: audio/HeartSongLoop.mp3; volume: -0.01; autoplay: true;">
+	<a-scene sound="src: audio/HeartSongLoop.mp3; volume: 0.5; autoplay: true;">
 		<asset>
-			<a-entity id="HighPitchMeduClick" sound="src: audio/menuclickHighPitch.wav;"></a-entity>
-			<a-entity id="MediumPitchMenuClick" sound="src: audio/menuclickMediumPitch.mp3;"></a-entity>
-			<a-entity id="LowPitchMenuClick" sound="src: audio/menuclickLowPitch.mp3;"></a-entity>
+			<a-entity id="MenuClickSound" sound="src: audio/menuclickHighPitch.wav;"></a-entity>
 		</asset>
 		<a-camera position="-0.1 1.8 0" cursor-color="black"></a-camera>
 
