@@ -1,4 +1,4 @@
-# MiniSeaVR-Anatomy-Explorer
+# MiniSeaVR-Anatomy-Explorer: HeartThrob
 Explore anatomy in a Cardboard VR Headset
 Access online at http://seavr.meteor.com/
 Built with A-Frame.js on Meteor.
