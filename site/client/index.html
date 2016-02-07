@@ -8,7 +8,7 @@
 </head>
 
 <template name="index">
-	<a-scene>
+	<a-scene sound="src: audio/HeartSongLoop.mp3; volume: -0.01; autoplay: true;">
 		<a-camera position="-0.1 1.8 0" cursor-color="black"></a-camera>
 
 		<!-- Floor -->
@@ -18,8 +18,8 @@
 
 		<a-root class="menu" position="0 0 -2">
 			<a-model class='organ' rotation = "0 0 0" scale=".01 .01 .01" src="/models/organs/Heart.dae" position="0 2 -.01"></a-model>
-			<a-entity id="leftarrow" position="1.5 2 0" text="text: >" material="color: blue"></a-entity>
-			<a-entity id="rightarrow" position="-1.8 2 0" text="text: <" material="color: blue"></a-entity>
+			<a-entity id="leftarrow" position="1.5 2 0" text="text: >" material="color: blue" sound="src: audio/heartclick.wav; on: click;"></a-entity>
+			<a-entity id="rightarrow" position="-1.8 2 0" text="text: <" material="color: blue" sound="src: audio/heartclick.wav; on: click;"></a-entity>
 		</a-root>
 
 			<!--Right Panel -->

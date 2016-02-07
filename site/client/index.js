@@ -1,6 +1,5 @@
 if(Meteor.isClient) {
 	Template.index.onRendered(function () {
-
 		$("#leftarrow").click( function () {
 			var rotation = $(".organ").get(0).getAttribute("rotation");
 			rotation.y -= 30;
