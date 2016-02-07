@@ -8,7 +8,7 @@
 </head>
 
 <template name="index">
-	<a-scene sound="src: audio/HeartSongLoop.mp3; volume: 1; autoplay: true;">
+	<a-scene sound="src: audio/HeartSongLoop.mp3; volume: -0.01; autoplay: true;">
 		<a-camera position="-0.1 1.8 0" cursor-color="black"></a-camera>
 
 		<!-- Floor -->
@@ -18,8 +18,8 @@
 
 		<a-root class="menu" position="0 0 -2">
 			<a-model class='organ' rotation = "0 0 0" scale=".01 .01 .01" src="/models/organs/Heart.dae" position="0 2 -.01"></a-model>
-			<a-entity id="leftarrow" position="1.5 2 0" text="text: >" material="color: blue"></a-entity>
-			<a-entity id="rightarrow" position="-1.8 2 0" text="text: <" material="color: blue"></a-entity>
+			<a-entity id="leftarrow" position="1.5 2 0" text="text: >" material="color: blue" sound="src: audio/heartclick.wav; on: click;"></a-entity>
+			<a-entity id="rightarrow" position="-1.8 2 0" text="text: <" material="color: blue" sound="src: audio/heartclick.wav; on: click;"></a-entity>
 		</a-root>
 
 			<!--Right Panel -->
@@ -34,28 +34,28 @@
 		<a-root rotation="0 90 0">
 			<a-root class="organMenu" position="0 0 -2">
 				<a-root position="0 2.5 0">
-					<a-entity class="menuItem" data-organ="Brain" scale="1 0.2 0"  geometry="primitive: plane" material="color: grey"></a-entity>
-					<a-entity class="menuItem" data-organ="Brain" position="-0.95 -0.15 0" scale="0.5 0.5 0.5" text="text: Brain" material="color: blue"></a-entity>
+					<a-entity class="menuItem" data-organ="Brain" scale=".75 0.2 0"  geometry="primitive: plane" material="color: grey"></a-entity>
+					<a-entity class="menuItem" data-organ="Brain" position="-.68 -0.15 0" scale="0.5 0.5 0.5" text="text: Brain" material="color: blue"></a-entity>
 				</a-root>
 
 				<a-root position="0 2 0">
-					<a-entity class="menuItem" data-organ="Lungs" scale="1 0.2 0"  geometry="primitive: plane" material="color: grey"></a-entity>
-					<a-entity class="menuItem" data-organ="Lungs" position="-0.95 -0.15 0" scale="0.5 0.5 0.5" text="text: Lungs" material="color: blue"></a-entity>
+					<a-entity class="menuItem" data-organ="Lungs" scale=".75 0.2 0"  geometry="primitive: plane" material="color: grey"></a-entity>
+					<a-entity class="menuItem" data-organ="Lungs" position="-0.68 -0.15 0" scale="0.5 0.5 0.5" text="text: Lungs" material="color: blue"></a-entity>
 				</a-root>
 
 				<a-root position="0 1.5 0">
-					<a-entity class="menuItem" data-organ="Heart" scale="1 0.2 0"  geometry="primitive: plane" material="color: grey"></a-entity>
-					<a-entity class="menuItem" data-organ="Heart" position="-0.95 -0.15 0" scale="0.5 0.5 0.5" text="text: Heart" material="color: blue"></a-entity>
+					<a-entity class="menuItem" data-organ="Heart" scale=".75 0.2 0"  geometry="primitive: plane" material="color: grey"></a-entity>
+					<a-entity class="menuItem" data-organ="Heart" position="-0.68 -0.15 0" scale="0.5 0.5 0.5" text="text: Heart" material="color: blue"></a-entity>
 				</a-root>
 
 				<a-root position="0 1 0">
-					<a-entity class="menuItem" data-organ="Stomach" scale="1 0.2 0"  geometry="primitive: plane" material="color: grey"></a-entity>
-					<a-entity class="menuItem" data-organ="Stomach" position="-.95 -0.15 0" scale="0.5 0.5 0.5" text="text: Stomach" material="color: blue"></a-entity>
+					<a-entity class="menuItem" data-organ="Stomach" scale=".75 0.2 0"  geometry="primitive: plane" material="color: grey"></a-entity>
+					<a-entity class="menuItem" data-organ="Stomach" position="-.68 -0.15 0" scale="0.5 0.5 0.5" text="text: Stomach" material="color: blue"></a-entity>
 				</a-root>
 
 				<a-root position="0 0.5 0">
-					<a-entity class="menuItem" data-organ="Liver" scale="1 0.2 0"  geometry="primitive: plane" material="color: grey"></a-entity>
-					<a-entity class="menuItem" data-organ="Liver" position="-0.95 -0.15 0" scale="0.5 0.5 0.5" text="text: Liver" material="color: blue"></a-entity>
+					<a-entity class="menuItem" data-organ="Liver" scale=".75 0.2 0"  geometry="primitive: plane" material="color: grey"></a-entity>
+					<a-entity class="menuItem" data-organ="Liver" position="-0.68 -0.15 0" scale="0.5 0.5 0.5" text="text: Liver" material="color: blue"></a-entity>
 				</a-root>
 			</a-root>
 		</a-root>
