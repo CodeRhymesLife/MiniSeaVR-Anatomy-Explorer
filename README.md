@@ -11,4 +11,4 @@ Explore anatomy in a cardboard
     4. Deploy to meteor.com:
         a. Go to the root git dir
         b. Go to the site dir: Run "cd site"
-        c. Deploy to meteor.com: Run "meteor deploy <prefix>.meteor.com" where <prefix> is anything you want it to be.
+        c. Deploy to meteor.com: Run "meteor deploy <prefix>" where <prefix> is anything you want it to be.
