@@ -1,5 +1,8 @@
 # MiniSeaVR-Anatomy-Explorer
-Explore anatomy in a cardboard
+Explore anatomy in a Cardboard VR Headset
+Access online at http://seavr.meteor.com/
+Built with A-Frame.js on Meteor.
+View our process documentation at http://bit.ly/SeaVR
 
 ## Server Setup
     1. Install nodejs - https://nodejs.org/en/download/
